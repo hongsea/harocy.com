@@ -1,0 +1,25 @@
+Block level: <div>, <h1> - <h6>, <p>,<form>
+Inline level: <span>, <img>, <a>
+
+command
+=======
+
+<strong> </strong>: is bold text
+<em> </em>: is italic text 
+<a href=""> </a>: is under line
+    example:
+        <a href="www.google.com" target="_blank"> </a>
+
+  --- List ---
+<ul> <li> </li> </ul>
+<ol> <li> </li> </ul>
+
+  --- HTML5 Semantic Tage ---
+<header></header>
+<footer></footer>
+<aside></aside>
+<main></main>
+<article></article>
+<nav></nav>
+<section></section>
+<details></details>
