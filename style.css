@@ -1,8 +1,13 @@
 *{
-    margin: -1px;
-    padding: 0;
-    list-style: none;
-    text-decoration: non;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box ;
+    /* list-style: none;
+    text-decoration: non; */
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header{
@@ -58,76 +63,73 @@
     height: 100%;
     font-size: 18px;
     font-family: arvo;
-    /* border-left: 1px solid #3ca0e7; */
-    /* padding: 3px 30px; */
 }
 
+.mainboxs{
+    float: left;
 
-/* ul li {
-    list-style: none;
-    margin: 0 auto;
-    border-left: 2px solid #3ca0e7;
+    margin: 70px;
+}
+
+.cards{
+    width: 15%;
     display: inline-block;
-    padding: 0 30px;
-    text-decoration: none;
-    font-family: arvo;
-  }
-
-  li a {
-    color: black;
-  }
-
-  li a:hover {
-    color: #3ca0e7;
-  }
-
-  li:hover {
-    cursor: pointer;
-  }
-
-  ul li ul {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-padding-left: 0;
-    left: 0;
-    display: none;
-    background: white;
-  }
-
-  ul li:hover > ul,
-  ul li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-    min-width: 250px;
-    text-align: left;
-    padding-top: 20px;
-    box-shadow: 0px 3px 5px -1px #ccc;
-  }
-
-  ul li ul li {
-    clear: both;
-    width: 100%;
-    text-align: left;
-    margin-bottom: 20px;
-    border-style: none;
-  }
-
-  ul li ul li a:hover {
-    padding-left: 10px;
-    border-left: 2px solid #3ca0e7;
-    transition: all 0.3s ease;
-  }
-
-a {
-
-  text-decoration: none;
-
-  &:hover {
-      color: #3CA0E7;
-  }
-
+    flex: 0 0 auto;
+    background-color: gray;
+    border-radius: 5px;
+    margin: 10px;
 }
 
-ul li ul li a { transition: all 0.5s ease; } */
+.cards:hover{
+    box-shadow: 2px 2px 10px black;
+}
+
+.image img{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.title{
+    text-align: center;
+}
+
+.description{
+    text-align: center;
+    padding: 5px;
+}
+
+button{
+    margin-top:30px;
+    margin-bottom: 30px;
+    background-color: white;
+    border:1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: black;
+    color:white;
+    translate: .5s;
+}
+
+@media screen and (max-width:1000px){
+    .cards{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:620){
+    .container{
+        width: 100%;
+    }
+    .heading{
+        padding:20px;
+        font-size: 30px;
+    }
+    .cards{
+        width:80%;
+    }
+}
