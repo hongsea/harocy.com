@@ -1,2 +1,5 @@
 # hongsea.github.io
-![hongsea.github.io status](https://github.com/hongsea/hongsea.github.io/workflows/master/badge.svg?branch=master)
+
+[![DEV CI + CD](https://github.com/hongsea/hongsea.github.io/actions/workflows/development.yml/badge.svg)](https://github.com/hongsea/hongsea.github.io/actions/workflows/development.yml)
+
+[![PROD CI + CD](https://github.com/hongsea/hongsea.github.io/actions/workflows/production.yml/badge.svg)](https://github.com/hongsea/hongsea.github.io/actions/workflows/production.yml)
