@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: Development
-      url: 'http://dev.myapp.com'
+      url: 'http://dev.hongsea.com'
     steps:
       - name: Deploy
         run: echo I am deploying to development! 
@@ -35,10 +35,10 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: Staging
-      url: 'https://dev.hongsea.com'
+      url: 'https://test.hongsea.com'
     steps:
       - name: Deploy
-        run: echo I am deploying to development!  
+        run: echo I am deploying to testing product!  
             
   DeployProd:
     name: Deploy to Production 
@@ -49,5 +49,5 @@ jobs:
       url: 'https://www.hongsea.com'
     steps:
       - name: Deploy
-        run: echo I am deploying! 
+        run: echo I am deploying to production! 
     
