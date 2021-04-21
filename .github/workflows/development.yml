@@ -9,9 +9,8 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      - name: "Working on: checkout"
-      - uses: actions/checkout@v2
-      - name: "Working on: compile code@"
+      uses: actions/checkout@v2
+      name: "Working on: compile code@"
         run: echo Hello, I am compiling dev branch.
 
   DeployDev:
@@ -23,8 +22,8 @@ jobs:
       name: Development
       url: 'http://dev.hongsea.com'
     steps:
-      - name: Deploy
-        run: echo I am deploying dev branch to development!     
-      # - run: |
-      #   echo "Log level: ${{ github.event.inputs.logLevel }}"
-      #   echo "Tags: ${{ github.event.inputs.tags }}"   
+      name: Deploy
+      run: echo I am deploying dev branch to development!     
+      run: |
+        echo "Log level: ${{ github.event.inputs.logLevel }}"
+        echo "Tags: ${{ github.event.inputs.tags }}"   
