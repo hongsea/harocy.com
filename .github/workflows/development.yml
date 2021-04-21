@@ -9,8 +9,8 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      uses: actions/checkout@v2
-      name: "Working on: compile code@"
+      - uses: actions/checkout@v2
+      - name: "Working on: compile code@"
         run: echo Hello, I am compiling dev branch.
 
   DeployDev:
