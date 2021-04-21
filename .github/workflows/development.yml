@@ -9,10 +9,9 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:      
-      - name: "Working on: checkout"
       - uses: actions/checkout@v2
       - name: Compile
-        run: echo Hello, I am compiling dev branch.
+      - run: echo Hello, I am compiling dev branch.
 
   DeployDev:
     name: Deploy to Dev 
