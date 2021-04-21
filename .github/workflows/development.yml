@@ -25,6 +25,6 @@ jobs:
     steps:
       - name: Deploy
         run: echo I am deploying dev branch to development!     
-      - run: |
-        echo "Log level: ${{ github.event.inputs.logLevel }}"
-        echo "Tags: ${{ github.event.inputs.tags }}"   
+      # - run: |
+      #   echo "Log level: ${{ github.event.inputs.logLevel }}"
+      #   echo "Tags: ${{ github.event.inputs.tags }}"   
